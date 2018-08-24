@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="增男"
+            android:onClick="insertMan"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="删男"
+            android:onClick="deleteMan"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="改男"
+            android:onClick="updateMan"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="查男一号"
+            android:onClick="queryManFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="查男All"
+            android:onClick="queryManAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="增女"
+            android:onClick="insertWomen"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="删女"
+            android:onClick="deleteWomen"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="改女"
+            android:onClick="updateWomen"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="查女一号"
+            android:onClick="queryWomenFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="查女All"
+            android:onClick="queryWomenAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/msg"
+            android:text="消息"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</LinearLayout>
